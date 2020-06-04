@@ -3,7 +3,7 @@ class Argocd < Formula
     desc "GitOps Continuous Delivery for Kubernetes"
     homepage "https://argoproj.io"
     baseurl = "https://github.com/argoproj/argo-cd/releases/download"
-    version "0.0.2"
+    version "0.1.0"
 
     bottle :unneeded
 
@@ -16,7 +16,7 @@ class Argocd < Formula
     end
 
     @@bin_name = "argocd-" + kernel + "-amd64"
-    url baseurl + "/0.0.2/" + @@bin_name
+    url baseurl + "/0.1.0/" + @@bin_name
 
     def install
       bin.install @@bin_name
